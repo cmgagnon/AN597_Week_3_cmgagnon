@@ -1,9 +1,14 @@
 ---
-title: "AN 597 Week 3 Homework"
+title: "Original Homework Code"
 author: "Christian Gagnon"
 date: "9/16/2019"
 output: html_document
 ---
+***
+
+# Homework 02
+
+***
 
 This is the code for [homework 02](https://fuzzyatelin.github.io/bioanth-stats/homework-02.html), on week three of AN597. This id homewrok linked to module 6 and 7.
 
@@ -17,3 +22,9 @@ x<-2+2
 x
 ```
 
+## Challenges
+
+<ol>
+<li>It was hard</li>
+<li>I'm not that smart</li>
+</ol>
