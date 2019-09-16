@@ -1,0 +1,19 @@
+---
+title: "AN 597 Week 3 Homework"
+author: "Christian Gagnon"
+date: "9/16/2019"
+output: html_document
+---
+
+This is the code for [homework 02](https://fuzzyatelin.github.io/bioanth-stats/homework-02.html), on week three of AN597. This id homewrok linked to module 6 and 7.
+
+>Every Saturday morning, at the same time, a primatologist goes and sits in the forest to listen for titi monkey calls, counting the number of calls they hear in a 2 hour window from 5am to 7am. Based on previous knowledge, she believes that the mean number of calls she will hear in that time is exactly 15. Let X represent the appropriate Poisson random variable of the number of calls heard in each monitoring session.
+
+Question 1: What is the probability that she will hear more than 8 calls during any given session?
+
+
+```{r}
+x<-2+2
+x
+```
+
