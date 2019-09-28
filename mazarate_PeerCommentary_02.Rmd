@@ -1,0 +1,61 @@
+---
+title: "Original Homework Code"
+author: "Christian Gagnon"
+date: "9/16/2019"
+output: html_document
+---
+***
+
+# Homework 02
+
+***
+
+This is the code for [homework 02](https://fuzzyatelin.github.io/bioanth-stats/homework-02.html), on week three of AN597. This id homewrok linked to module 6 and 7.
+
+>Every Saturday morning, at the same time, a primatologist goes and sits in the forest to listen for titi monkey calls, counting the number of calls they hear in a 2 hour window from 5am to 7am. Based on previous knowledge, she believes that the mean number of calls she will hear in that time is exactly 15. Let X represent the appropriate Poisson random variable of the number of calls heard in each monitoring session.
+
+Question 1: What is the probability that she will hear more than 8 calls during any given session?
+```{r}
+1-ppois(8,15)
+```
+
+Question 2: What is the probability that she will hear no calls in a session?
+```{r}
+ppois(0,15)
+```
+
+Question 3:What is the probability that she will hear exactly 3 calls in a session?
+```{r}
+ppois(3,15)-ppois(2,15)
+```
+*I didn't realize you could assign the variables like this- I used x = 2, l = 15*
+
+
+Question 4: Plot the relevant Poisson mass function over the values in range 0 ≤ x ≤ 30.
+```{r}
+x <- 0:30
+l = 15
+probset<-dpois(x=x,lambda=l)
+barplot(probset,names.arg=x,space=0,xlab="x",ylab="Pr(X = x)",main="Probability Mass Function")
+```
+
+Question 5: Simulate 104 results from this distribution (i.e., 2 years of Saturday monitoring sessions).
+```{r}
+y<-rpois(104,15)
+y
+```
+*wondering if we should be using the set.seed = TRUE here so that they are the same set everytime??* 
+
+Question 6: Plot the simulated results using hist() and use xlim() to set the horizontal limits to be from 0 to 30. How does your histogram compare to the shape of the probability mass function you plotted above?
+```{r}
+hist(y,xlim=c(0,30),xlab="Number of Calls",main="Call Monitoring Histogram",breaks=30)
+```
+
+## Challenges
+
+<ol>
+<li>Conceptualizing the problem we were given</li>
+<li>Couldn't figure out the right function to get the probilities for a poisson distribution.</li> *I also struggled figuring this out*
+<li>xlim variable for the historgram.</li> 
+<li>How to show individual histogram bars for each possible result.</li>
+</ol>
