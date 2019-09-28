@@ -58,3 +58,16 @@ hist(y,xlim=c(0,30),xlab="Number of Calls",main="Call Monitoring Histogram",brea
 <li>xlim variable for the historgram.</li>
 <li>How to show individual histogram bars for each possible result.</li>
 </ol>
+
+## Comments from Laura:
+
+*Hey Christian! So you definitely got a couple of different answers than me, but I am trusting your methods of
+doing this since it has been a LONG time since I have done Poisson distributions, or most stats for that matter!
+You will have to teach me how you know to do "1-" the ppois function for example. I get why that should work, but
+how you know which problems you need to do that for! Great, thanks!*
+
+*I also struggled (and it seemed Mel did too) with figuring out the xlim variable. I definitley had to play around
+with all of the plot variables and settings to make it work, and I am practice over time will make it feel more
+natural.*
+
+*Overall, looks great and answers some of the questions I had about how to answer the questions!*
