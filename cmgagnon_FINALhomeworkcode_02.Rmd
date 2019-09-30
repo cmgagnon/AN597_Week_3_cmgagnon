@@ -47,7 +47,7 @@ y
 
 Question 6: Plot the simulated results using hist() and use xlim() to set the horizontal limits to be from 0 to 30. How does your histogram compare to the shape of the probability mass function you plotted above?
 ```{r}
-hist(y,xlim=c(0,30),xlab="Number of Calls",main="Call Monitoring Histogram",breaks=30)
+hist(y,xlim=c(0,30),xlab="Number of Calls",main="Call Monitoring Histogram",breaks=30,col="aquamarine")
 ```
 
 ## Challenges
